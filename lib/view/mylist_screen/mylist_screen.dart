@@ -5,6 +5,7 @@ import 'package:flutter_application_3/view/blank_screen/blank_screen.dart';
 
 
 class MylistScreen extends StatelessWidget {
+  
   const MylistScreen({super.key});
 
   @override

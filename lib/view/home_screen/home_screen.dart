@@ -4,6 +4,7 @@ import 'package:flutter_application_3/database/database.dart';
 
 import 'package:flutter_application_3/utils/color_constant/color_constant.dart';
 import 'package:flutter_application_3/utils/image_constant/image_constant.dart';
+import 'package:flutter_application_3/view/home_screen/widgets/infocard.dart';
 import 'package:flutter_application_3/view/home_screen/widgets/movies_list_buider.dart';
 import 'package:flutter_application_3/view/mylist_screen/mylist_screen.dart';
 
@@ -165,10 +166,13 @@ class _HomeScreenState extends State<HomeScreen> {
             MovieslistBuilder(
               title: "Continue Watching for Emenalo",
               Imagelist: Database.homeimagelist,
+              child: InfoCard()                  
+
             ),
             MovieslistBuilder(
               title: "Popular on Netflix",
               Imagelist: Database.homepopularimagelist,
+            
             )
           ],
         ),

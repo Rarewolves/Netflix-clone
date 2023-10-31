@@ -9,6 +9,8 @@ class MovieslistBuilder extends StatelessWidget {
   this.width=103,
   this.fontsize=21,
   required this.Imagelist,
+  this.child
+
   
   
   
@@ -19,6 +21,8 @@ class MovieslistBuilder extends StatelessWidget {
   final double width;
  final double  fontsize;
  final List<String> Imagelist;
+ final child;
+ 
 
  
   
@@ -50,18 +54,7 @@ class MovieslistBuilder extends StatelessWidget {
                     
                     
                   ) ,
-                  child: Column(mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                    Container(
-                      height: 37,width: 103,
-                      color:ColorConstant.boxblack,
-                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                        Image.asset("assets/images/feather_info.png"),
-                        Image.asset("assets/images/bx_bx-dots-vertical-rounded.png")
-                      ],),
-                    )
-                  ],),
+                  child:child
                   ),
                 
                ),

@@ -4,6 +4,7 @@ import 'package:flutter_application_3/view/comingsoon_screen/comingsoon_screen.d
 import 'package:flutter_application_3/view/download_screen/download_screen.dart';
 import 'package:flutter_application_3/view/home_screen/home_screen.dart';
 import 'package:flutter_application_3/view/more_screen/more_screen.dart';
+
 import 'package:flutter_application_3/view/search_screen/search_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
@@ -20,7 +21,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
     SearchScreen(),
     ComingSoonscreen(),
     DownloadScreen(),
-    MoreScreen()
+    MoreScreen(),
+    
   ];
 
   @override
