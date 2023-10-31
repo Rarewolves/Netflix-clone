@@ -46,15 +46,19 @@ class MovieslistBuilder extends StatelessWidget {
              child: SizedBox(height: height,
                child: Row(
                 children: 
-                  List.generate(Imagelist.length, (index) =>Container(
-                    height: height,width: width,
-                    decoration: BoxDecoration(border: Border(right: BorderSide(width: 7)),
-                    shape: shape,
-                    image: DecorationImage(image: AssetImage(Imagelist[index]),fit:BoxFit.cover )
-                    
-                    
-                  ) ,
-                  child:child
+                  List.generate(Imagelist.length, (index) =>Padding(
+                    padding: const EdgeInsets.only(right: 7),
+                    child: Container(
+                     
+                      height: height,width: width,
+                      decoration: BoxDecoration(
+                      shape: shape,
+                      image: DecorationImage(image: AssetImage(Imagelist[index]),fit:BoxFit.cover )
+                      
+                      
+                    ) ,
+                    child:child
+                    ),
                   ),
                 
                ),

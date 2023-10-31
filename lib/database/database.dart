@@ -14,10 +14,15 @@ class Database {
       
   ];
   static List<String> homescreenimagelist =[
-     Imageconstant.image_home1,
+    
      Imageconstant.image_home2,
      Imageconstant.image_home3,
-     Imageconstant.image_home1,
+   
+     Imageconstant.image_home2,
+     Imageconstant.image_home3,
+      Imageconstant.image_home2,
+     Imageconstant.image_home3,
+   
      Imageconstant.image_home2,
      Imageconstant.image_home3,
     
@@ -85,9 +90,9 @@ class Database {
   ];
 
  static List<Map> comingsoonlist =[
-  {"coming_img":Imageconstant.comingsoon_3,"title":"Castle & Castle","text":"yu",},
-  {"coming_img":Imageconstant.comingsoon_4,"title":"Tiny Pretty Things","text":"hh"},
-  {"coming_img":Imageconstant.comingsoon_5,"title":"Tiny Pretty Things","text":"bn"},
+  {"coming_img":Imageconstant.comingsoon_3,"title":"Castle & Castle","text":["jhj","kjk"]},
+  {"coming_img":Imageconstant.comingsoon_4,"title":"Tiny Pretty Things","text":["aa","bb"]},
+  {"coming_img":Imageconstant.comingsoon_5,"title":"Tiny Pretty Things","text":["j","p","o"]},
  
  ];
 

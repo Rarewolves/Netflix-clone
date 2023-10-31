@@ -40,7 +40,7 @@ class ComingSoonscreen extends StatelessWidget {
             physics: NeverScrollableScrollPhysics(),
            shrinkWrap: true,
             itemCount: Database.comingsoonlist.length,
-            itemBuilder: (context, index) =>    NotificationCard(images: Database.comingsoonlist[index]["coming_img"],title: Database.comingsoonlist[index]["title"],mylist: [Database.comingsoonlist[index]["text"]]),),
+            itemBuilder: (context, index) =>    NotificationCard(images: Database.comingsoonlist[index]["coming_img"],title: Database.comingsoonlist[index]["title"],mylist: [Database.comingsoonlist[index]["text"][index]]),),
 
           ],),
         ),
