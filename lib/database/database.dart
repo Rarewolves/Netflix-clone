@@ -90,9 +90,9 @@ class Database {
   ];
 
  static List<Map> comingsoonlist =[
-  {"coming_img":Imageconstant.comingsoon_3,"title":"Castle & Castle","text":["jhj","kjk"]},
-  {"coming_img":Imageconstant.comingsoon_4,"title":"Tiny Pretty Things","text":["aa","bb"]},
-  {"coming_img":Imageconstant.comingsoon_5,"title":"Tiny Pretty Things","text":["j","p","o"]},
+  {"coming_img":Imageconstant.comingsoon_3,"title":"Castle & Castle","text":["Steamy","Soapy","Slow Burn","Suspenseful","Teen","Mystery","Legal","Steamy","Soapy","Slow Burn","Suspenseful","Teen","Mystery","Legal"]},
+  {"coming_img":Imageconstant.comingsoon_4,"title":"Tiny Pretty Things","text":["Steamy","Soapy","Slow Burn","Suspenseful","Teen","Mystery"]},
+  {"coming_img":Imageconstant.comingsoon_5,"title":"Tiny Pretty Things","text":["Steamy","Soapy","Slow Burn","Suspenseful","Teen","Mystery","Action"]},
  
  ];
 
