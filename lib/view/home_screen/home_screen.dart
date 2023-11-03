@@ -4,7 +4,7 @@ import 'package:flutter_application_3/database/database.dart';
 
 import 'package:flutter_application_3/utils/color_constant/color_constant.dart';
 import 'package:flutter_application_3/utils/image_constant/image_constant.dart';
-import 'package:flutter_application_3/view/home_screen/widgets/infocard.dart';
+
 import 'package:flutter_application_3/view/home_screen/widgets/movies_list_buider.dart';
 import 'package:flutter_application_3/view/mylist_screen/mylist_screen.dart';
 
@@ -155,25 +155,29 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            MovieslistBuilder(
-              title: "Previews",
-              shape: BoxShape.circle,
-              height: 102,
-              width: 102,
-              fontsize: 27,
-              Imagelist: Database.homescreenimagelist,
-            ),
-            MovieslistBuilder(
-              title: "Continue Watching for Emenalo",
-              Imagelist: Database.homeimagelist,
-              child: InfoCard()                  
+    ListView.builder(itemCount: Database.homescreenlist.length,
+physics: NeverScrollableScrollPhysics(),
+shrinkWrap: true,      
+      itemBuilder: (context, index) => MovieslistBuilder(
+                title: Database.homescreenlist[index]["title"],
+                shape: Database.homescreenlist[index]["shape"],
+                height: Database.homescreenlist[index]["height"],
+                width: Database.homescreenlist[index]["width"],
+                fontsize: Database.homescreenlist[index]["fontsize"],
+                child:Database.homescreenlist[index]["Child"] ,
+                // Imagelist: Database.homescreenlist[index]["images"]
+              ),)
+            // MovieslistBuilder(
+            //   title: "Continue Watching for Emenalo",
+            //   Imagelist: Database.homeimagelist,
+            //   child: InfoCard()                  
 
-            ),
-            MovieslistBuilder(
-              title: "Popular on Netflix",
-              Imagelist: Database.homepopularimagelist,
+            // ),
+            // MovieslistBuilder(
+            //   title: "Popular on Netflix",
+            //   Imagelist: Database.homepopularimagelist,
             
-            )
+            // )
           ],
         ),
       ),

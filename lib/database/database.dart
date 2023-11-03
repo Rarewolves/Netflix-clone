@@ -1,6 +1,8 @@
 
 
+import 'package:flutter/material.dart';
 import 'package:flutter_application_3/utils/image_constant/image_constant.dart';
+import 'package:flutter_application_3/view/home_screen/widgets/infocard.dart';
 
 
 class Database {
@@ -105,7 +107,13 @@ class Database {
 
     
  ];
+ static List<Map> homescreenlist = [
+ {"title":"Previews","shape":BoxShape.circle,"height":102.toDouble(),"width":102.toDouble(),"fontsize":27.toDouble(),"Images":["assets/images/Rectangle 11.png","assets/images/Rectangle 11.png"]},
+ {"title":"Continue Watching for Emenalo","Child":InfoCard(),"Images":["assets/images/Rectangle 11.png","assets/images/Rectangle 11.png",],"shape":BoxShape.rectangle,"height":161.toDouble(),"width":103.toDouble(),"fontsize":21.toDouble(),},
+ {"title":"Continue Watching for Emenalo","Images":["assets/images/Rectangle 11.png","assets/images/Rectangle 11.png",],"shape":BoxShape.rectangle,"height":161.toDouble(),"width":103.toDouble(),"fontsize":21.toDouble(),},
  
+
+ ];
 
 
 
