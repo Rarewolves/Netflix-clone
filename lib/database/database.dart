@@ -15,7 +15,7 @@ class Database {
       
       
   ];
-  static List<String> homescreenimagelist =[
+  static List<String>? homescreenimagelist =[
     
      Imageconstant.image_home2,
      Imageconstant.image_home3,
@@ -108,9 +108,9 @@ class Database {
     
  ];
  static List<Map> homescreenlist = [
- {"title":"Previews","shape":BoxShape.circle,"height":102.toDouble(),"width":102.toDouble(),"fontsize":27.toDouble(),"Images":["assets/images/Rectangle 11.png","assets/images/Rectangle 11.png"]},
- {"title":"Continue Watching for Emenalo","Child":InfoCard(),"Images":["assets/images/Rectangle 11.png","assets/images/Rectangle 11.png",],"shape":BoxShape.rectangle,"height":161.toDouble(),"width":103.toDouble(),"fontsize":21.toDouble(),},
- {"title":"Continue Watching for Emenalo","Images":["assets/images/Rectangle 11.png","assets/images/Rectangle 11.png",],"shape":BoxShape.rectangle,"height":161.toDouble(),"width":103.toDouble(),"fontsize":21.toDouble(),},
+ {"title":"Previews","shape":BoxShape.circle,"height":102.toDouble(),"width":102.toDouble(),"fontsize":27.toDouble(),"Images":Database.homescreenimagelist},
+ {"title":"Continue Watching for Emenalo","shape":BoxShape.rectangle,"height":161.toDouble(),"width":103.toDouble(),"fontsize":21.toDouble(),"Child":InfoCard(),"Images":Database.homeimagelist},
+ {"title":"Popular on Netflix","shape":BoxShape.rectangle,"height":161.toDouble(),"width":103.toDouble(),"fontsize":21.toDouble(),"Images":Database.homepopularimagelist},
  
 
  ];

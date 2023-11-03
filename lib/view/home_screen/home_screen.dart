@@ -165,19 +165,9 @@ shrinkWrap: true,
                 width: Database.homescreenlist[index]["width"],
                 fontsize: Database.homescreenlist[index]["fontsize"],
                 child:Database.homescreenlist[index]["Child"] ,
-                // Imagelist: Database.homescreenlist[index]["images"]
+                Imagelist: Database.homescreenlist[index]["Images"]
               ),)
-            // MovieslistBuilder(
-            //   title: "Continue Watching for Emenalo",
-            //   Imagelist: Database.homeimagelist,
-            //   child: InfoCard()                  
-
-            // ),
-            // MovieslistBuilder(
-            //   title: "Popular on Netflix",
-            //   Imagelist: Database.homepopularimagelist,
-            
-            // )
+           
           ],
         ),
       ),

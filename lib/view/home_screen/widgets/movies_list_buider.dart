@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/utils/color_constant/color_constant.dart';
 
+
 class MovieslistBuilder extends StatelessWidget {
   MovieslistBuilder({
    required this.title,
@@ -8,7 +9,7 @@ class MovieslistBuilder extends StatelessWidget {
   required this.height,
   required  this.width,
  required  this.fontsize,
-  // required this.Imagelist,
+  required this.Imagelist,
   this.child,
 
   
@@ -20,7 +21,7 @@ class MovieslistBuilder extends StatelessWidget {
   final double height;
   final double width;
  final double  fontsize;
-//  final List<String> Imagelist;
+ final List<String> Imagelist;
  final  child;
  
 
@@ -46,18 +47,18 @@ class MovieslistBuilder extends StatelessWidget {
              child: SizedBox(height: height,
                child: Row(
                 children: 
-                  List.generate(10, (index) =>Padding(
+                  List.generate(Imagelist.length, (index) =>Padding(
                     padding: const EdgeInsets.only(right: 7),
                     child: Container(
                      
                       height: height,width: width,
                       decoration: BoxDecoration(
                       shape: shape,
-                      // image: DecorationImage(image: AssetImage(Imagelist[index]),fit:BoxFit.cover )
+                      image: DecorationImage(image: AssetImage(Imagelist[index]),fit:BoxFit.cover ),
                       
-                      color: const Color.fromARGB(255, 7, 255, 185),
+                     
                     ) ,
-                    child:child
+                    child: child
                     ),
                   ),
                 
