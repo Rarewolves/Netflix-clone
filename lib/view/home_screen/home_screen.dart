@@ -57,9 +57,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                   fontSize: 17,
                                   color: ColorConstant.primarywhite),
                             ),
-                            GestureDetector(onTap: () {
-                              Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => MylistScreen(),), (route) => false);
-                            },
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.pushAndRemoveUntil(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => MylistScreen(),
+                                    ),
+                                    (route) => false);
+                              },
                               child: Text(
                                 "My List",
                                 style: TextStyle(
@@ -80,7 +86,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                
               ],
             ),
             SizedBox(
@@ -155,19 +160,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-    ListView.builder(itemCount: Database.homescreenlist.length,
-physics: NeverScrollableScrollPhysics(),
-shrinkWrap: true,      
-      itemBuilder: (context, index) => MovieslistBuilder(
-                title: Database.homescreenlist[index]["title"],
-                shape: Database.homescreenlist[index]["shape"],
-                height: Database.homescreenlist[index]["height"],
-                width: Database.homescreenlist[index]["width"],
-                fontsize: Database.homescreenlist[index]["fontsize"],
-                child:Database.homescreenlist[index]["Child"] ,
-                Imagelist: Database.homescreenlist[index]["Images"]
-              ),)
-           
+            ListView.builder(
+              itemCount: Database.homescreenlist.length,
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              itemBuilder: (context, index) => MovieslistBuilder(
+                  title: Database.homescreenlist[index]["title"],
+                  shape: Database.homescreenlist[index]["shape"],
+                  height: Database.homescreenlist[index]["height"],
+                  width: Database.homescreenlist[index]["width"],
+                  fontsize: Database.homescreenlist[index]["fontsize"],
+                  child: Database.homescreenlist[index]["Child"],
+                  Imagelist: Database.homescreenlist[index]["Images"]),
+            )
           ],
         ),
       ),
