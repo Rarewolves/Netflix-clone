@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_application_3/database/database.dart';
@@ -26,12 +27,23 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Stack(
               children: [
-                Container(
+               CarouselSlider.builder(itemCount:Database.mycontainerlist.length , itemBuilder: (context, index, realIndex) =>
+               Container(
+                 decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(Database.mycontainerlist[index]),
+                        fit: BoxFit.cover),
+                  ),
+                  
+                
+               ),
+               
+               
+                options: CarouselOptions(height:415,autoPlay: true,viewportFraction: 1 ,)),
+                  Container(
                   height: 415,
                   decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(Imageconstant.image_home0),
-                        fit: BoxFit.cover),
+                   
                   ),
                   child: SafeArea(
                     child: Column(
@@ -156,6 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ],
                     )
+                    
                   ],
                 ),
               ),

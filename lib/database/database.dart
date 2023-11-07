@@ -95,7 +95,8 @@ class Database {
         "Suspenseful",
         "Teen",
         "Mystery",
-        "Legal"
+        "Legal",
+        "games"
       ]
     },
     {
@@ -156,5 +157,15 @@ class Database {
       "fontsize": 21.toDouble(),
       "Images": Database.homepopularimagelist
     },
+  ];
+
+
+
+  static List<String> mycontainerlist=[
+  Imageconstant.home0,
+  Imageconstant.home1,
+    Imageconstant.home2,
+    
+        Imageconstant.home4,
   ];
 }

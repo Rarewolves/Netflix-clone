@@ -40,6 +40,11 @@ static String mylist_9 =  "assets/images/mylist-9.png";
 static String mylist_10 =  "assets/images/mylist-10.png";
 static String mylist_11=  "assets/images/mylist-11.png";
 static String mylist_12=  "assets/images/ant-design_plus-outlined.png";
+static String home0=  "assets/images/Peaky Blinders _ Poster design.jpeg";
+static String home1=  "assets/images/Money Heist Season 5.jpeg";
+static String home2=  "assets/images/download.jpeg";
+
+static String home4=  "assets/images/It (2017), de Andy Muschietti.jpeg";
 
 
 
